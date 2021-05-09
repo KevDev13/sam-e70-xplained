@@ -22,6 +22,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "atsame70q21-pac"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "691ede44e3db36336a61ced7b3f32022fc2dbdb0ebc42590f3a7979383359c15"
+dependencies = [
+ "bare-metal",
+ "cortex-m 0.6.7",
+ "vcell",
+]
+
+[[package]]
 name = "bare-metal"
 version = "0.2.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -187,6 +198,7 @@ dependencies = [
 name = "sam-e70-xplained"
 version = "0.1.0"
 dependencies = [
+ "atsame70q21-pac",
  "cortex-m 0.6.7",
  "cortex-m-rt",
  "cortex-m-semihosting",
